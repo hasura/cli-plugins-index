@@ -1,0 +1,27 @@
+name: cli-ext
+version: "v1.0.0"
+shortDescription: "Hasura CLI extension"
+homepage: https://github.com/hasura/graphql-engine
+hidden: true
+platforms:
+  - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-linux
+    sha256: c0c628927d3c6d81b9d6325cf02f42b728a787945121134207bfedf7ff0d64bb
+    bin: command-linux
+    files:
+      - from: ./command-linux
+        to: command-linux
+    selector: linux-amd64
+  - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-macos
+    sha256: 82788b8e554b9f332535b0a9cd35f295bf07aed50ae67f6b36ee11cdeb84efa6
+    bin: cli-ext
+    files:
+      - from: ./command-macos
+        to: command-macos
+    selector: darwin-amd64
+  - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-windows.exe
+    sha256: 82788b8e554b9f332535b0a9cd35f295bf07aed50ae67f6b36ee11cdeb84efa6
+    bin: cli-ext.exe
+    files:
+      - from: ./command-windows.exe
+        to: command-windows.exe
+    selector: windows-amd64
