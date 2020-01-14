@@ -5,7 +5,7 @@ homepage: https://github.com/hasura/graphql-engine
 hidden: true
 platforms:
   - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-linux
-    sha256: bf8862762d2a6693da5d1bbeb53ab593157697b1473be0891b8f669d7c560672
+    sha256: dff3f2baa734feac428b9d1f23d2fe74166b3f129592483b6001d9d475ff6737
     bin: command-linux
     files:
       - from: ./command-linux
