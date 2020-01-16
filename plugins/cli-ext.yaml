@@ -13,14 +13,14 @@ platforms:
     selector: linux-amd64
   - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-macos
     sha256: 73597ffa2bf964a2f5c8dd6ae6057473473977f5c2e82a2bf8958b59ea96eeff
-    bin: cli-ext
+    bin: command-macos
     files:
       - from: ./command-macos
         to: command-macos
     selector: darwin-amd64
   - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-windows.exe
     sha256: 98ef05604d3e96b633a603c6dd2538d05b2673e3fa6b9b0bb1d482137e9a0a8f
-    bin: cli-ext.exe
+    bin: command-windows.exe
     files:
       - from: ./command-windows.exe
         to: command-windows.exe
