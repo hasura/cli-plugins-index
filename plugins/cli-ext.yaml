@@ -5,21 +5,21 @@ homepage: https://github.com/hasura/graphql-engine
 hidden: true
 platforms:
   - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-linux
-    sha256: c219a919056d5f81af1714b499da804118035bb9880bd22bdef15ac8f6a8728c
+    sha256: 809c0fe1a28c9dd0aef34c1d39e1ec4a4c12115f1d6fe1fd8c692af972417ebb
     bin: command-linux
     files:
       - from: ./command-linux
         to: command-linux
     selector: linux-amd64
   - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-macos
-    sha256: 35e892937ce2d6fa11c1db2cbf642d2cc4ab6a636505d0abcfdb1571d8b8fed7
+    sha256: c395c52a0df6f1beef889ad4beb8b0ff7c38b4d1b677d2da75498a73fa4a399b
     bin: command-macos
     files:
       - from: ./command-macos
         to: command-macos
     selector: darwin-amd64
   - uri: https://storage.googleapis.com/plugins-test/cli-ext/command-windows.exe
-    sha256: e701de6b891bf9e47dda062fac6cc59e8c4221b9862bb19dba506fa5ba89019c
+    sha256: 0b7bdee7aba8fdf55dd30b1132f23bb16a95ec0fa5b81ff98b2ac4ab2d93a38a
     bin: command-windows.exe
     files:
       - from: ./command-windows.exe
