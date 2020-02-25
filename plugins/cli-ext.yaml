@@ -1,25 +1,25 @@
 name: cli-ext
-version: "v1.2.0-beta.1"
+version: "v1.2.0-rj.1"
 shortDescription: "Hasura CLI extension"
 homepage: https://github.com/hasura/graphql-engine
 hidden: true
 platforms:
-  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.2.0-beta.1/cli-ext-hasura-linux.tar.gz"
-    sha256: "9afce14c3cab4c74732b1d9ce35f05baec5deb271d7d94ef976a93e08bbae324"
+  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.2.0-rj.1/command-linux.tar.gz"
+    sha256: "5a562639b0fb84b48944e097aa352bae449b2f2b39b014016eb3a59f9b614cb5"
     bin: command-linux
     files:
       - from: ./command-linux
         to: command-linux
     selector: linux-amd64
-  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.2.0-beta.1/cli-ext-hasura-macos.tar.gz"
-    sha256: "cdf6729d08ca8948848edffab91495fe11e29a3e9e32ce1b0ff01a595ef92bc9"
+  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.2.0-rj.1/command-macos.tar.gz"
+    sha256: "32c3af181113a565371e8705af1e644ab96b58d68bc9f127fac7ba79603fe726"
     bin: command-macos
     files:
       - from: ./command-macos
         to: command-macos
     selector: darwin-amd64
-  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.2.0-beta.1/cli-ext-hasura-win.zip"
-    sha256: "00ed8b758fdc1b05de6c51d3784c1a19bcfa25934a67f68543f141d81b160d04"
+  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.2.0-rj.1/command-win.zip"
+    sha256: "8083b42483b6bcf5b5170cb024c396ef03b26114a4a8a919410d848c09565083"
     bin: command-win.exe
     files:
       - from: ./command-win.exe
