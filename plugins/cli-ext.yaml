@@ -5,14 +5,14 @@ homepage: https://github.com/hasura/graphql-engine
 hidden: true
 platforms:
   - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.2.0-beta.2/cli-ext-hasura-linux.tar.gz"
-    sha256: "bc589f7ae18d804f087d341490241424dca49c7f1b0f7a1ce19349141b028dee"
+    sha256: "2cfb38cf56eb9fe6e45133ddc5b99fdda3f176069f5ce5db71e903084844fea9"
     bin: cli-ext-hasura-linux
     files:
       - from: ./cli-ext-hasura-linux
         to: cli-ext-hasura-linux
     selector: linux-amd64
   - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.2.0-beta.2/cli-ext-hasura-macos.tar.gz"
-    sha256: "741fb7b2debe0b45608baf5b13e5734d57cbd2a9455f65f33772a757e4d25755"
+    sha256: "b396bc3fc8fbf7e485a5dd0c11c8b143d5e552a654af9c30b50217b2487b9105"
     bin: cli-ext-hasura-macos
     files:
       - from: ./cli-ext-hasura-macos
