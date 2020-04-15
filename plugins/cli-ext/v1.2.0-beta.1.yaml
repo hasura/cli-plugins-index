@@ -1,6 +1,6 @@
 name: cli-ext
 version: "v1.2.0-beta.1"
-shortDescription: "Hasura CLI extension"
+shortDescription: "Hasura CLI extensions"
 homepage: https://github.com/hasura/graphql-engine
 hidden: true
 platforms:
