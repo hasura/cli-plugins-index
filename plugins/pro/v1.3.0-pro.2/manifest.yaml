@@ -20,7 +20,7 @@ platforms:
     selector: darwin-amd64
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases/v1.3.0-pro.2/hasura-pro-windows-amd64.zip"
     sha256: "1df8c07eb2c7de980d4793640780245db6ae0fd933ca8c46ccb91b98040f217e"
-    bin: hasura-pro
+    bin: hasura-pro.exe
     files:
       - from: ./hasura-pro-windows-amd64.exe
         to: hasura-pro.exe
