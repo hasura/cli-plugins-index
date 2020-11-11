@@ -1,25 +1,25 @@
 name: cli-ext
-version: "v1.3.3"
+version: "v1.3.2"
 shortDescription: "Hasura CLI extension"
 homepage: https://github.com/hasura/graphql-engine
 hidden: true
 platforms:
-  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.3.3/cli-ext-hasura-linux.tar.gz"
-    sha256: "d01e5868fa5055c68bcebdb8b7eceb80fd177babf3e986c2aa66215843e72cb1"
+  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.3.2/cli-ext-hasura-linux.tar.gz"
+    sha256: "f8a7beb472d143ff95a18f5e131aebbe1e333321a0f390a3617c2d3b23df2bc2"
     bin: cli-ext-hasura-linux
     files:
       - from: ./cli-ext-hasura-linux
         to: cli-ext-hasura-linux
     selector: linux-amd64
-  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.3.3/cli-ext-hasura-macos.tar.gz"
-    sha256: "acdfd6d9a0fc2a7c10f47e6be2d48d1db02287cc456162b992e287d181d75447"
+  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.3.2/cli-ext-hasura-macos.tar.gz"
+    sha256: "118c44e063bac8a39414fe4f91cf0daf6d79d1032b22354517c17f5bdc86b011"
     bin: cli-ext-hasura-macos
     files:
       - from: ./cli-ext-hasura-macos
         to: cli-ext-hasura-macos
     selector: darwin-amd64
-  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.3.3/cli-ext-hasura-win.zip"
-    sha256: "1015e0ceb5c87c27a8365b5cc84ca0eacc6ab40b0ba96d5c08ad1d62c4d2da3b"
+  - uri: "https://github.com/hasura/graphql-engine/releases/download/v1.3.2/cli-ext-hasura-win.zip"
+    sha256: "2ffadc4c34ea8ce649089928b89b3d83f705c65165ca79b861934ba910755ecf"
     bin: cli-ext-hasura-win.exe
     files:
       - from: ./cli-ext-hasura-win.exe
