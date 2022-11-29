@@ -5,21 +5,21 @@ homepage: https://docs.pro.hasura.io/cli
 hidden: true
 platforms:
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/v2.10.2-pro.1/hasura-pro-linux-amd64.tar.gz"
-    sha256: "ae14255ac5134d180645cb73f7bf54a70fb8655f9fe98059c0bcb22feadd8453"
+    sha256: "a6fd04ce042b3922961e01efa1e263a6623501254619e25f39a15826073175e3"
     bin: hasura-pro
     files:
       - from: ./hasura-pro-linux-amd64
         to: hasura-pro
     selector: linux-amd64
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/v2.10.2-pro.1/hasura-pro-darwin-amd64.tar.gz"
-    sha256: "8dfcdcf2519071d93cc3bc7ecc34e3d48c4f92bd5184073a63dc053c2a1ab7a8"
+    sha256: "d16225f0ce1acc71be3ce131dd1c1f67ed5170d89b522e49e87a8ac3228ed1e7"
     bin: hasura-pro
     files:
       - from: ./hasura-pro-darwin-amd64
         to: hasura-pro
     selector: darwin-amd64
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/v2.10.2-pro.1/hasura-pro-windows-amd64.zip"
-    sha256: "a075f43ce253bedb5fa5054365bcf9df8602d531e32b3fde75185ba7fdcdc152"
+    sha256: "80c73fac8fb19cc7d32660e6e1af67466a68c821507ee290305855ef9a16cbc8"
     bin: hasura-pro.exe
     files:
       - from: ./hasura-pro-windows-amd64.exe
