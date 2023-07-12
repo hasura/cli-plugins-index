@@ -1,0 +1,41 @@
+name: cloud
+version: "20230712"
+shortDescription: "CLI plugin for Hasura Cloud"
+homepage: https://hasura.io/docs/latest/hasura-cli/overview/
+hidden: true
+platforms:
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/20230712/hasura-pro-linux-amd64.tar.gz"
+    sha256: "149ee9b91de3fc6aa00cf3e3bc2393c9aeb5b4ad9b68626ec13b25a541ceeae7"
+    bin: hasura-cloud
+    files:
+      - from: ./hasura-pro-linux-amd64
+        to: hasura-cloud
+    selector: linux-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/20230712/hasura-pro-linux-arm64.tar.gz"
+    sha256: "d294bafc3bf72b81828c5e4d4ecee09d0b673f658b44c0d94a72bc7cdbd3668f"
+    bin: hasura-cloud
+    files:
+      - from: ./hasura-pro-linux-arm64
+        to: hasura-cloud
+    selector: linux-arm64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/20230712/hasura-pro-darwin-amd64.tar.gz"
+    sha256: "529b30ac96731cc38556d9541234447062c780f71ebccbbd05b019d5752171d0"
+    bin: hasura-cloud
+    files:
+      - from: ./hasura-pro-darwin-amd64
+        to: hasura-cloud
+    selector: darwin-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/20230712/hasura-pro-darwin-arm64.tar.gz"
+    sha256: "d1dc6c190a638d1d6af3d9787beb9f08ad57f2abdb56588c60e6948490b15cd8"
+    bin: hasura-cloud
+    files:
+      - from: ./hasura-pro-darwin-arm64
+        to: hasura-cloud
+    selector: darwin-arm64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/20230712/hasura-pro-windows-amd64.zip"
+    sha256: "0ef4614797ae9d215eb3726fb780f76e49aea09d1b2f20f5a5305334e10df0a3"
+    bin: hasura-cloud.exe
+    files:
+      - from: ./hasura-pro-windows-amd64.exe
+        to: hasura-cloud.exe
+    selector: windows-amd64
