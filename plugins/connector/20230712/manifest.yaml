@@ -5,35 +5,35 @@ homepage: https://hasura.io/docs/latest/hasura-cli/overview/
 hidden: true
 platforms:
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20230712/hasura-connector-linux-amd64.tar.gz"
-    sha256: "45a7eefc63ba25fee15f454d30af439a7ef2a4867b7ccfc7217655a4de42dba8"
+    sha256: "ff019e58a3ed4f7524d8af66f4cd57ebc443f50812a193a5053051e8d2e23372"
     bin: hasura-connector
     files:
       - from: ./hasura-connector-linux-amd64
         to: hasura-connector
     selector: linux-amd64
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20230712/hasura-connector-linux-arm64.tar.gz"
-    sha256: "f9c5b0661b7572fae770c52985f3e5663c279bc7e7ffb23f4b14b9d88af5a45d"
+    sha256: "098934dae88df5284428a21538bc24436e78af4f22250b29cdff2f13a154ef78"
     bin: hasura-connector
     files:
       - from: ./hasura-connector-linux-arm64
         to: hasura-connector
     selector: linux-arm64
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20230712/hasura-connector-darwin-amd64.tar.gz"
-    sha256: "0195ab6daa13d92c8650e1941b78a5b28f7d46b792118785cdce77c30600098c"
+    sha256: "8cd69a4fe18512a9bba2c493ed2be57f56663f14e0da9a734ef4c23ad068171d"
     bin: hasura-connector
     files:
       - from: ./hasura-connector-darwin-amd64
         to: hasura-connector
     selector: darwin-amd64
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20230712/hasura-connector-darwin-arm64.tar.gz"
-    sha256: "d7f442ddd7ee152cc42c1a7aee99300dc9c5d4230e37a57704f89ab7de1981ab"
+    sha256: "b39eb267863531cd70d68a572eb044752c9a24fdb06e45472d8a06ca000f8b9f"
     bin: hasura-connector
     files:
       - from: ./hasura-connector-darwin-arm64
         to: hasura-connector
     selector: darwin-arm64
   - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases-dev/20230712/hasura-connector-windows-amd64.zip"
-    sha256: "d72900b6ca43056c4412aeed72fac0959395744ecefeca3df9073df7cfa68101"
+    sha256: "96f6342ee36d09beb04cf383f309411d7baae05ac7f3744012629d7a316aa0f1"
     bin: hasura-connector.exe
     files:
       - from: ./hasura-connector-windows-amd64.exe
