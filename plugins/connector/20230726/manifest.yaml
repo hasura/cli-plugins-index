@@ -32,7 +32,7 @@ platforms:
       - from: ./hasura-connector-darwin-arm64
         to: hasura-connector
     selector: darwin-arm64
-  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases-dev/20230726/hasura-connector-windows-amd64.zip"
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20230726/hasura-connector-windows-amd64.zip"
     sha256: "c7eaf3158f54bfd9adaf153396b24912d1fcdc3fc33f496948eeb79ec3e7093c"
     bin: hasura-connector.exe
     files:
