@@ -1,0 +1,41 @@
+name: notebook
+version: "20230727"
+shortDescription: "CLI plugin for Hasura Cloud Jupyter notebook"
+homepage: https://hasura.io/docs/latest/hasura-cli/overview/
+hidden: true
+platforms:
+  - uri: "https://storage.googleapis.com/hasura-cli-notebook-plugin/20230727/hasura-notebook-linux-amd64.tar.gz"
+    sha256: "69791bdb471c4093a10e003cf78cbac02e1cf23025ed9d40fa3bbf04775d1e5e"
+    bin: hasura-notebook
+    files:
+      - from: ./hasura-notebook-linux-amd64
+        to: hasura-notebook
+    selector: linux-amd64
+  - uri: "https://storage.googleapis.com/hasura-cli-notebook-plugin/20230727/hasura-notebook-linux-arm64.tar.gz"
+    sha256: "f0d7095e48e1bd2622e7781967940f98b4a4a4e49771b0a136d534a4c1da7c22"
+    bin: hasura-notebook
+    files:
+      - from: ./hasura-notebook-linux-arm64
+        to: hasura-notebook
+    selector: linux-arm64
+  - uri: "https://storage.googleapis.com/hasura-cli-notebook-plugin/20230727/hasura-notebook-darwin-amd64.tar.gz"
+    sha256: "9403a4e1c8ca0d4cb1a8ee904aac9d583e9d328e0dbc179bc5a32ea1e8bb50ce"
+    bin: hasura-notebook
+    files:
+      - from: ./hasura-notebook-darwin-amd64
+        to: hasura-notebook
+    selector: darwin-amd64
+  - uri: "https://storage.googleapis.com/hasura-cli-notebook-plugin/20230727/hasura-notebook-darwin-arm64.tar.gz"
+    sha256: "be0da5279399e11648805f1b782030643ab458cbaad111ba0b87a79de04a7031"
+    bin: hasura-notebook
+    files:
+      - from: ./hasura-notebook-darwin-arm64
+        to: hasura-notebook
+    selector: darwin-arm64
+  - uri: "https://storage.googleapis.com/hasura-cli-notebook-plugin/20230727/hasura-notebook-windows-amd64.zip"
+    sha256: "cfefa4ff2d8ddcab9391ee02fcfa57064b3d3384b1e43ea2797b98be5bf77b5b"
+    bin: hasura-notebook.exe
+    files:
+      - from: ./hasura-notebook-windows-amd64.exe
+        to: hasura-notebook.exe
+    selector: windows-amd64
