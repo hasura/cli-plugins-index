@@ -1,0 +1,42 @@
+@@ -0,0 +1,41 @@
+name: gateway
+version: "20230808"
+shortDescription: "CLI plugin for Hasura gateway"
+homepage: https://hasura.io/docs/latest/hasura-cli/overview/
+hidden: true
+platforms:
+  - uri: "https://storage.googleapis.com/hasura-cli-gateway-plugin/20230808/hasura-gateway-linux-amd64.tar.gz"
+    sha256: "55dd8a31471090700f50c4b226cd16a7a4819645f48d82b944971b86d3d1319e"
+    bin: hasura-gateway
+    files:
+      - from: ./hasura-gateway-linux-amd64
+        to: hasura-gateway
+    selector: linux-amd64
+  - uri: "https://storage.googleapis.com/hasura-cli-gateway-plugin/20230808/hasura-gateway-linux-arm64.tar.gz"
+    sha256: "c0d7a62a97ff0cc402475dd7661c5121f47799c7a81f78bec9bd7cb03a5faac4"
+    bin: hasura-gateway
+    files:
+      - from: ./hasura-gateway-linux-arm64
+        to: hasura-gateway
+    selector: linux-arm64
+  - uri: "https://storage.googleapis.com/hasura-cli-gateway-plugin/20230808/hasura-gateway-darwin-amd64.tar.gz"
+    sha256: "30ed008af4f078e442131622e7ca4b19040edeec005719bf0ae0807c15bc1031"
+    bin: hasura-gateway
+    files:
+      - from: ./hasura-gateway-darwin-amd64
+        to: hasura-gateway
+    selector: darwin-amd64
+  - uri: "https://storage.googleapis.com/hasura-cli-gateway-plugin/20230808/hasura-gateway-darwin-arm64.tar.gz"
+    sha256: "25674d2e27348301a965c60c62ba18ee4535fb2344de29dcba0ef35811bbdbb3"
+    bin: hasura-gateway
+    files:
+      - from: ./hasura-gateway-darwin-arm64
+        to: hasura-gateway
+    selector: darwin-arm64
+  - uri: "https://storage.googleapis.com/hasura-cli-gateway-plugin/20230808/hasura-gateway-windows-amd64.zip"
+    sha256: "643dadc77039aa7fe24ce04d5ad9f766cd46b2fe2167f8f7f11b59d07444e3bf"
+    bin: hasura-gateway.exe
+    files:
+      - from: ./hasura-gateway-windows-amd64.exe
+        to: hasura-gateway.exe
+    selector: windows-amd64
