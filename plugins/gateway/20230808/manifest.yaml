@@ -1,4 +1,3 @@
-@@ -0,0 +1,41 @@
 name: gateway
 version: "20230808"
 shortDescription: "CLI plugin for Hasura gateway"
