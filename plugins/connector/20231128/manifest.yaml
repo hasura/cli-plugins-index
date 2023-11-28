@@ -1,0 +1,41 @@
+name: connector
+version: "20231128"
+shortDescription: "CLI plugin for Hasura Cloud Data Connector"
+homepage: https://hasura.io/docs/latest/hasura-cli/overview/
+hidden: true
+platforms:
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20231128/hasura-connector-linux-amd64.tar.gz"
+    sha256: "46c6cc8cdf6d0f89df92905e1cfdcf897bcafa41f705d0a1c23de84773c4b341"
+    bin: hasura-connector
+    files:
+      - from: ./hasura-connector-linux-amd64
+        to: hasura-connector
+    selector: linux-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20231128/hasura-connector-linux-arm64.tar.gz"
+    sha256: "412658ed7a7529c217bfa5f1f7380cf6259d07a99f860f4658e8cd74f19ac566"
+    bin: hasura-connector
+    files:
+      - from: ./hasura-connector-linux-arm64
+        to: hasura-connector
+    selector: linux-arm64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20231128/hasura-connector-darwin-amd64.tar.gz"
+    sha256: "eabeb769685d0537e09a4feaea069677cc2dc3e5e5ad8be157b73d59e2f6929b"
+    bin: hasura-connector
+    files:
+      - from: ./hasura-connector-darwin-amd64
+        to: hasura-connector
+    selector: darwin-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20231128/hasura-connector-darwin-arm64.tar.gz"
+    sha256: "ec86933b6d4cf26c824cb54e673ac2556f755b3c13283e0dd13f674a595e1b8f"
+    bin: hasura-connector
+    files:
+      - from: ./hasura-connector-darwin-arm64
+        to: hasura-connector
+    selector: darwin-arm64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-connector-cli-releases/20231128/hasura-connector-windows-amd64.zip"
+    sha256: "89a47967c8b616ff26ad61605e6525f39f2377047bb3d11ac24b15de8907cbaf"
+    bin: hasura-connector.exe
+    files:
+      - from: ./hasura-connector-windows-amd64.exe
+        to: hasura-connector.exe
+    selector: windows-amd64
