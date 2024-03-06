@@ -27,10 +27,10 @@ platforms:
   - selector: windows-amd64
     uri: "https://github.com/hasura/ndc-postgres/releases/download/v0.4.0/ndc-postgres-cli-x86_64-pc-windows-msvc.exe"
     sha256: "34e738903eafb6faa5f51e7b94494caaecd9c45e0246157a6ed193ce0a9eb712"
-    bin: "hasura-ndc-postgres"
+    bin: "hasura-ndc-postgres.exe"
     files:
       - from: "./ndc-postgres-cli-x86_64-pc-windows-msvc.exe"
-        to: "hasura-ndc-postgres"
+        to: "hasura-ndc-postgres.exe"
   - selector: linux-amd64
     uri: "https://github.com/hasura/ndc-postgres/releases/download/v0.4.0/ndc-postgres-cli-x86_64-unknown-linux-gnu"
     sha256: "6009b1f7157ffad8a5a05958c6f390871b2a98d4af087886c84d5f4cbb0cd942"
