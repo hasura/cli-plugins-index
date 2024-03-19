@@ -1,0 +1,42 @@
+name: upgrade-from-v2
+version: "20240319"
+shortDescription: "V2 Upgrade Plugin for Hasura V3"
+homepage: https://hasura.io/TODO
+hidden: true
+platforms:
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-upgrade-from-v2/20240319/hasura-upgrade-from-v2-linux-amd64.tar.gz"
+    sha256: "2d110f179c2d37003842a68eea358983a0f3de739a66e27142ece5c2c94020b8"
+    bin: hasura-upgrade-from-v2
+    files:
+      - from: ./hasura-upgrade-from-v2-linux-amd64
+        to: hasura-upgrade-from-v2
+    selector: linux-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-upgrade-from-v2/20240319/hasura-upgrade-from-v2-darwin-amd64.tar.gz"
+    sha256: "2630862742ed850ece6b9678e1bd6a079a19b4e23605ee462341b17f9bd66284"
+    bin: hasura-upgrade-from-v2
+    files:
+      - from: ./hasura-upgrade-from-v2-darwin-amd64
+        to: hasura-upgrade-from-v2
+    selector: darwin-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-upgrade-from-v2/20240319/hasura-upgrade-from-v2-windows-amd64.zip"
+    sha256: "0fca25022b901d3b8c3c1e8a11416208699f33001a7f70e2fc1fd07c695d58a3"
+    bin: hasura-upgrade-from-v2.exe
+    files:
+      - from: ./hasura-upgrade-from-v2-windows-amd64.exe
+        to: hasura-upgrade-from-v2.exe
+    selector: windows-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-upgrade-from-v2/20240319/hasura-upgrade-from-v2-linux-arm64.tar.gz"
+    sha256: "04e0419e67feb8e9994fb09db0acb73c185714220040bae19d064e51b832f307"
+    bin: hasura-upgrade-from-v2
+    files:
+      - from: ./hasura-upgrade-from-v2-linux-arm64
+        to: hasura-upgrade-from-v2
+    selector: linux-arm64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-upgrade-from-v2/20240319/hasura-upgrade-from-v2-darwin-arm64.tar.gz"
+    sha256: "b51741eff2ef8eb99385ca8085e2e4fe4b0ed87fef84f6b6424e11a63dcf051f"
+    bin: hasura-upgrade-from-v2
+    files:
+      - from: ./hasura-upgrade-from-v2-darwin-arm64
+        to: hasura-upgrade-from-v2
+    selector: darwin-arm64
+
