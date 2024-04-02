@@ -1,0 +1,40 @@
+name: ndc-postgres
+version: "v0.5.2"
+shortDescription: "CLI plugin for Hasura ndc-postgres"
+homepage: https://hasura.io/connectors/postgres
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-postgres/releases/download/v0.5.2/ndc-postgres-cli-aarch64-apple-darwin"
+    sha256: "08155d79bdad956754e665c2abc90f677d0e22d69a0261740d2fd200d6840fbe"
+    bin: "hasura-ndc-postgres"
+    files:
+      - from: "./ndc-postgres-cli-aarch64-apple-darwin"
+        to: "hasura-ndc-postgres"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-postgres/releases/download/v0.5.2/ndc-postgres-cli-aarch64-unknown-linux-gnu"
+    sha256: "6b71780d98eb2cdebc3182c6fd1625513824299d95d374a2d49f20096743ed50"
+    bin: "hasura-ndc-postgres"
+    files:
+      - from: "./ndc-postgres-cli-aarch64-unknown-linux-gnu"
+        to: "hasura-ndc-postgres"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-postgres/releases/download/v0.5.2/ndc-postgres-cli-x86_64-apple-darwin"
+    sha256: "975d6a3b6593a116d1e36907fe4bbcc346b52a1d98eb4dda9e35699046955e9d"
+    bin: "hasura-ndc-postgres"
+    files:
+      - from: "./ndc-postgres-cli-x86_64-apple-darwin"
+        to: "hasura-ndc-postgres"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-postgres/releases/download/v0.5.2/ndc-postgres-cli-x86_64-pc-windows-msvc.exe"
+    sha256: "deaf953b58c1c06cbf704d2835d8a4fc1c4ad00d96bc6cd74791172e14eef718"
+    bin: "hasura-ndc-postgres.exe"
+    files:
+      - from: "./ndc-postgres-cli-x86_64-pc-windows-msvc.exe"
+        to: "hasura-ndc-postgres.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-postgres/releases/download/v0.5.2/ndc-postgres-cli-x86_64-unknown-linux-gnu"
+    sha256: "1e630eb58fb96b7efe5f07cb8de96f7c1f586646fc8debc3e9e6e65df8eb1ee1"
+    bin: "hasura-ndc-postgres"
+    files:
+      - from: "./ndc-postgres-cli-x86_64-unknown-linux-gnu"
+        to: "hasura-ndc-postgres"
