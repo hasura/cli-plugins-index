@@ -1,0 +1,41 @@
+name: clickhouse
+version: "v0.2.6"
+shortDescription: "CLI plugin for Hasura ndc-clickhouse"
+homepage: https://hasura.io/connectors/clickhouse
+hidden: true
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-clickhouse/releases/download/v0.2.6/ndc-clickhouse-cli-aarch64-apple-darwin"
+    sha256: "5d886ffab5cb693f9b9107d390a9ad23d576451017b60a88209a031fac5b7f1c"
+    bin: "hasura-clickhouse"
+    files:
+      - from: "./ndc-clickhouse-cli-aarch64-apple-darwin"
+        to: "hasura-clickhouse"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-clickhouse/releases/download/v0.2.6/ndc-clickhouse-cli-aarch64-unknown-linux-musl"
+    sha256: "e47c8ea278da552777cfb298cd6b2ca990fb72662c718c81cfbb797396efc555"
+    bin: "hasura-clickhouse"
+    files:
+      - from: "./ndc-clickhouse-cli-aarch64-unknown-linux-musl"
+        to: "hasura-clickhouse"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-clickhouse/releases/download/v0.2.6/ndc-clickhouse-cli-x86_64-apple-darwin"
+    sha256: "da15f4bba6584124980170f3f2592ec4ffcfb19ceac6b03e3871bee613d4c14c"
+    bin: "hasura-clickhouse"
+    files:
+      - from: "./ndc-clickhouse-cli-x86_64-apple-darwin"
+        to: "hasura-clickhouse"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-clickhouse/releases/download/v0.2.6/ndc-clickhouse-cli-x86_64-pc-windows-msvc.exe"
+    sha256: "9d89ca7b5df02e0c04cdea50740e72e189e398a21273aeca241b2a5214f32171"
+    bin: "hasura-clickhouse.exe"
+    files:
+      - from: "./ndc-clickhouse-cli-x86_64-pc-windows-msvc.exe"
+        to: "hasura-clickhouse.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-clickhouse/releases/download/v0.2.6/ndc-clickhouse-cli-x86_64-unknown-linux-musl"
+    sha256: "5d9818de7c3c6f5f22b00cbe3b30a1292c7c344efb00315447379248e7fe0983"
+    bin: "hasura-clickhouse"
+    files:
+      - from: "./ndc-clickhouse-cli-x86_64-unknown-linux-musl"
+        to: "hasura-clickhouse"
