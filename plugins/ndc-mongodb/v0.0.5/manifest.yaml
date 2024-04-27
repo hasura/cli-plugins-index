@@ -1,0 +1,41 @@
+name: ndc-mongodb
+version: "v0.0.5"
+shortDescription: "CLI plugin for Hasura ndc-mongodb"
+homepage: https://hasura.io/connectors/mongodb
+hidden: true
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-mongodb/releases/download/v0.0.5/mongodb-cli-plugin-aarch64-apple-darwin"
+    sha256: "09f0d9f3c03160d2c3bbe9d5daf23239a2b840cfe9147016a6fb21c0a62c5a77"
+    bin: "hasura-ndc-mongodb"
+    files:
+      - from: "./mongodb-cli-plugin-aarch64-apple-darwin"
+        to: "hasura-ndc-mongodb"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-mongodb/releases/download/v0.0.5/mongodb-cli-plugin-aarch64-unknown-linux-musl"
+    sha256: "0ab6a182c4b436537e8f0023d01ad97a4eb436f78761826237261e0aa335b9be"
+    bin: "hasura-ndc-mongodb"
+    files:
+      - from: "./mongodb-cli-plugin-aarch64-unknown-linux-musl"
+        to: "hasura-ndc-mongodb"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-mongodb/releases/download/v0.0.5/mongodb-cli-plugin-x86_64-apple-darwin"
+    sha256: "3a69f06b33f0dd74cbc3f26035bec07a627c77f19cd7de5a0f65c6e6f9b9f184"
+    bin: "hasura-ndc-mongodb"
+    files:
+      - from: "./mongodb-cli-plugin-x86_64-apple-darwin"
+        to: "hasura-ndc-mongodb"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-mongodb/releases/download/v0.0.5/mongodb-cli-plugin-x86_64-pc-windows-msvc.exe"
+    sha256: "a5df461ad2754558c361be6ce3beba42be5475a03c13610fe09ff1a2c59cc228"
+    bin: "hasura-ndc-mongodb.exe"
+    files:
+      - from: "./mongodb-cli-plugin-x86_64-pc-windows-msvc.exe"
+        to: "hasura-ndc-mongodb.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-mongodb/releases/download/v0.0.5/mongodb-cli-plugin-x86_64-unknown-linux-musl"
+    sha256: "3aa69b24cf060d71f33537c5e799c6f75f0ea6c41daa540041a3b2cb3eb52e00"
+    bin: "hasura-ndc-mongodb"
+    files:
+      - from: "./mongodb-cli-plugin-x86_64-unknown-linux-musl"
+        to: "hasura-ndc-mongodb"
