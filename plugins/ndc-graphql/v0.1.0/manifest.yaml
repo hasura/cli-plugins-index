@@ -1,4 +1,4 @@
-name: graphql
+name: ndc-graphql
 version: "v0.1.0"
 shortDescription: "CLI plugin for Hasura ndc-graphql"
 homepage: https://hasura.io/connectors/graphql
@@ -27,7 +27,7 @@ platforms:
         to: "hasura-ndc-graphql"
   - selector: windows-amd64
     uri: "https://github.com/hasura/ndc-graphql/releases/download/v0.1.0/ndc-graphql-cli-x86_64-pc-windows-msvc.exe"
-    sha256: "ef50ea5052748c1933941efb024b1bd59a24dc6de69336e2989fa6d0d6e99133"
+    sha256: "9b9373607047d0a817734ffa2dbe142e0cbd42b53c9e5d87104cfb9ce7177351"
     bin: "hasura-ndc-graphql.exe"
     files:
       - from: "./ndc-graphql-cli-x86_64-pc-windows-msvc.exe"
