@@ -69,14 +69,17 @@ fi
 
 mkdir -p "$OUTPUT_DIRECTORY"
 
+echo >&2 'Fetching assets information...'
 ASSETS_JSON="$(gh --repo=hasura/ndc-postgres release view --json=assets "$VERSION")"
 
+echo >&2 'Fetching sha256sums...'
 SHA256SUM="$(
   gh --repo=hasura/ndc-postgres release download "$VERSION" --pattern 'sha256sum' --output - \
     | jq -R 'split(" +"; "") | {"key": .[1], "value": .[0]}' \
     | jq -s 'from_entries'
 )"
 
+echo >&2 'Processing the manifest.json file...'
 echo "$ASSETS_JSON" | jq --arg version "$VERSION" --argjson sha256sum "$SHA256SUM" '
 {
   "aarch64-apple-darwin": "darwin-arm64",
@@ -110,3 +113,5 @@ echo "$ASSETS_JSON" | jq --arg version "$VERSION" --argjson sha256sum "$SHA256SU
 }
 ' | yq --yaml-output . \
   > "$OUTPUT_FILE"
+
+echo >&2 'Done.'
