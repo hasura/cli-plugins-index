@@ -2,7 +2,6 @@ name: ndc-mongodb
 version: "v1.1.0"
 shortDescription: "CLI plugin for Hasura ndc-mongodb"
 homepage: https://hasura.io/connectors/mongodb
-hidden: false
 platforms:
   - selector: darwin-arm64
     uri: "https://github.com/hasura/ndc-mongodb/releases/download/v1.0.0/mongodb-cli-plugin-aarch64-apple-darwin"
