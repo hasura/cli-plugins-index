@@ -39,12 +39,12 @@ SHA256SUM="$(
 echo >&2 'Processing the manifest.json file...'
 echo "$ASSETS_JSON" | jq --arg version "$VERSION" --argjson sha256sum "$SHA256SUM" '
 {
-  "aarch64-apple-darwin": "darwin-arm64",
-  "aarch64-unknown-linux-gnu": "linux-arm64",
-  "x86_64-apple-darwin": "darwin-amd64",
-  "x86_64-pc-windows-msvc": "windows-amd64",
-  "x86_64-unknown-linux-gnu": "linux-amd64"
-} as $selectors |
+  "aarch64-apple-darwin": {"selector": "darwin-arm64"},
+  "aarch64-unknown-linux-gnu": {"selector": "linux-arm64"},
+  "x86_64-apple-darwin": {"selector": "darwin-amd64"},
+  "x86_64-pc-windows-msvc": {"selector": "windows-amd64", "extension": ".exe"},
+  "x86_64-unknown-linux-gnu": {"selector": "linux-amd64"}
+} as $info |
 {
   "name": "ndc-postgres",
   "version": $version,
@@ -55,14 +55,14 @@ echo "$ASSETS_JSON" | jq --arg version "$VERSION" --argjson sha256sum "$SHA256SU
     | select($filename | startswith("ndc-postgres-cli"))
     | ($filename | sub("^ndc-postgres-cli-"; "") | sub("\\.exe$"; "")) as $arch
     | {
-      "selector": ($selectors[$arch] // error("no selector for the arch: " + $arch)),
+      "selector": ($info[$arch] // error("arch not supported: " + $arch)).selector,
       "uri": .url,
       "sha256": ($sha256sum[$filename] // error("no sha256sum for filename: " + $filename)),
       "bin": "hasura-ndc-postgres",
       "files": [
         {
           "from": ("./" + $filename),
-          "to": "hasura-ndc-postgres"
+          "to": ("hasura-ndc-postgres" + (($info[$arch] // error("arch not supported: " + $arch)).extension // ""))
         }
       ]
     }
