@@ -44,7 +44,7 @@ echo "$ASSETS_JSON" | jq --arg version "$VERSION" --argjson sha256sum "$SHA256SU
   "x86_64-apple-darwin": {"selector": "darwin-amd64"},
   "x86_64-pc-windows-msvc": {"selector": "windows-amd64", "extension": ".exe"},
   "x86_64-unknown-linux-gnu": {"selector": "linux-amd64"}
-} as $info |
+} as $arch_specific_details |
 {
   "name": "ndc-postgres",
   "version": $version,
@@ -54,15 +54,16 @@ echo "$ASSETS_JSON" | jq --arg version "$VERSION" --argjson sha256sum "$SHA256SU
     (.url | split("/") | last) as $filename
     | select($filename | startswith("ndc-postgres-cli"))
     | ($filename | sub("^ndc-postgres-cli-"; "") | sub("\\.exe$"; "")) as $arch
+    | ($arch_specific_details[$arch] // error("arch not supported: " + $arch)) as $details
     | {
-      "selector": ($info[$arch] // error("arch not supported: " + $arch)).selector,
+      "selector": $details.selector,
       "uri": .url,
       "sha256": ($sha256sum[$filename] // error("no sha256sum for filename: " + $filename)),
       "bin": "hasura-ndc-postgres",
       "files": [
         {
           "from": ("./" + $filename),
-          "to": ("hasura-ndc-postgres" + (($info[$arch] // error("arch not supported: " + $arch)).extension // ""))
+          "to": ("hasura-ndc-postgres" + ($details.extension // ""))
         }
       ]
     }
