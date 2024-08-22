@@ -27,7 +27,7 @@ platforms:
   - selector: windows-amd64
     uri: https://github.com/hasura/ndc-postgres/releases/download/v1.0.2/ndc-postgres-cli-x86_64-pc-windows-msvc.exe
     sha256: f4fa330fb2d7740243503f7e2537313b67ea3cf7d63fd771784c0c3ee0706195
-    bin: hasura-ndc-postgres
+    bin: hasura-ndc-postgres.exe
     files:
       - from: ./ndc-postgres-cli-x86_64-pc-windows-msvc.exe
         to: hasura-ndc-postgres.exe

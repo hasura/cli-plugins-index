@@ -55,15 +55,16 @@ echo "$ASSETS_JSON" | jq --arg version "$VERSION" --argjson sha256sum "$SHA256SU
     | select($filename | startswith("ndc-postgres-cli"))
     | ($filename | sub("^ndc-postgres-cli-"; "") | sub("\\.exe$"; "")) as $arch
     | ($arch_specific_details[$arch] // error("arch not supported: " + $arch)) as $details
+    | ("hasura-ndc-postgres" + ($details.extension // "")) as $bin
     | {
       "selector": $details.selector,
       "uri": .url,
       "sha256": ($sha256sum[$filename] // error("no sha256sum for filename: " + $filename)),
-      "bin": "hasura-ndc-postgres",
+      "bin": $bin,
       "files": [
         {
           "from": ("./" + $filename),
-          "to": ("hasura-ndc-postgres" + ($details.extension // ""))
+          "to": $bin
         }
       ]
     }
