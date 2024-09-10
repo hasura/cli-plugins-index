@@ -1,0 +1,40 @@
+name: ndc-sqlserver
+version: "v0.2.0"
+shortDescription: "CLI plugin for Hasura ndc-sqlserver"
+homepage: https://hasura.io/connectors/sqlserver
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-sqlserver/releases/download/v0.2.0/ndc-sqlserver-cli-aarch64-apple-darwin"
+    sha256: "962f64ad21a1996b164919c08686c63538e70fe8c60e1f183f4545a6c6c1e8b3"
+    bin: "hasura-ndc-sqlserver"
+    files:
+      - from: "./ndc-sqlserver-cli-aarch64-apple-darwin"
+        to: "hasura-ndc-sqlserver"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-sqlserver/releases/download/v0.2.0/ndc-sqlserver-cli-aarch64-unknown-linux-gnu"
+    sha256: "2bf65b7b3d4781c4f28a7f6ece52962d71ed31c5566f02c68e45d5a645c8c77c"
+    bin: "hasura-ndc-sqlserver"
+    files:
+      - from: "./ndc-sqlserver-cli-aarch64-unknown-linux-gnu"
+        to: "hasura-ndc-sqlserver"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-sqlserver/releases/download/v0.2.0/ndc-sqlserver-cli-x86_64-apple-darwin"
+    sha256: "03673ffc22ee466e64a9dbc3eef4e3a0cad3dfaa0f0c54c998c84e9bf9b06b7c"
+    bin: "hasura-ndc-sqlserver"
+    files:
+      - from: "./ndc-sqlserver-cli-x86_64-apple-darwin"
+        to: "hasura-ndc-sqlserver"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-sqlserver/releases/download/v0.2.0/ndc-sqlserver-cli-x86_64-pc-windows-msvc.exe"
+    sha256: "fff197f81bd39783e7fef8e50844475cda7fe09d33bd52dbfa58d50fb9ddc50e"
+    bin: "hasura-ndc-sqlserver.exe"
+    files:
+      - from: "./ndc-sqlserver-cli-x86_64-pc-windows-msvc.exe"
+        to: "hasura-ndc-sqlserver.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-sqlserver/releases/download/v0.2.0/ndc-sqlserver-cli-x86_64-unknown-linux-gnu"
+    sha256: "ca014d29f01b66a43103e1ac38d8470cf4b58b536ccae2f3233b20ff3333ce8b"
+    bin: "hasura-ndc-sqlserver"
+    files:
+      - from: "./ndc-sqlserver-cli-x86_64-unknown-linux-gnu"
+        to: "hasura-ndc-sqlserver"
