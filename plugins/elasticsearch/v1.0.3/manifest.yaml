@@ -34,7 +34,7 @@ platforms:
         to: "hasura-elasticsearch.exe"
   - selector: linux-amd64
     uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.0.3/ndc-elasticsearch-cli-x86_64-unknown-linux-musl"
-    sha256: "624a31ec69349b7fa727e8518288f5df172ce3c62b5caa7912623eef29f0dae0"
+    sha256: "452a12cee3fcf2233af1cf0dec0367646af974d8ba1ece6c5800684b8e21fb45"
     bin: "hasura-elasticsearch"
     files:
       - from: "./ndc-elasticsearch-cli-x86_64-unknown-linux-musl"
