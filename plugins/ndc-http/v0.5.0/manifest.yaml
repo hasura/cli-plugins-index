@@ -6,35 +6,35 @@ hidden: true
 platforms:
   - selector: darwin-arm64
     uri: "https://github.com/hasura/ndc-http/releases/download/v0.5.0/ndc-http-schema-darwin-arm64"
-    sha256: "5674ceb5b58b20c4a381db50d0e7cfad8c26f864390526c647f9d61dbd472417"
+    sha256: "e0115b8a16c120a88e43d065224522e29ad7d1af3a65c5d088e8d07ba096a22d"
     bin: "ndc-http-schema"
     files:
       - from: "./ndc-http-schema-darwin-arm64"
         to: "ndc-http-schema"
   - selector: linux-arm64
     uri: "https://github.com/hasura/ndc-http/releases/download/v0.5.0/ndc-http-schema-linux-arm64"
-    sha256: "5ece6d74da02ed0e37707bece0b4e4821521c0f7f23c6b6c7e0e7eb0b5127375"
+    sha256: "8d0fe5b726dacc02034a4a9f507d594a7a2d42b67d23177f889c3fdb63ffd1ea"
     bin: "ndc-http-schema"
     files:
       - from: "./ndc-http-schema-linux-arm64"
         to: "ndc-http-schema"
   - selector: darwin-amd64
     uri: "https://github.com/hasura/ndc-http/releases/download/v0.5.0/ndc-http-schema-darwin-amd64"
-    sha256: "f2e33920265ae98ba3101d569f9f724cadb027028f566250465b3a2809e66d82"
+    sha256: "cadd28cb86049be28895285909459b9900b72930172ecd91932d85da06117850"
     bin: "ndc-http-schema"
     files:
       - from: "./ndc-http-schema-darwin-amd64"
         to: "ndc-http-schema"
   - selector: windows-amd64
     uri: "https://github.com/hasura/ndc-http/releases/download/v0.5.0/ndc-http-schema-windows-amd64.exe"
-    sha256: "abdd64aa719125024f0af5cfeab3c34c0f82a519a65ded17de4dbe06dac6b1d9"
+    sha256: "46739ad8e5b4ef9c57a393c1d24c3be5ad55eff9e871acc754933f895b36ef17"
     bin: "ndc-http-schema.exe"
     files:
       - from: "./ndc-http-schema-windows-amd64.exe"
         to: "ndc-http-schema.exe"
   - selector: linux-amd64
     uri: "https://github.com/hasura/ndc-http/releases/download/v0.5.0/ndc-http-schema-linux-amd64"
-    sha256: "bf030eed7093c2e7b8c3b3a1d5b07ae94659362cf2c84fa1f191ce825e993ccd"
+    sha256: "8aa14cde91d1c3e397af18a393fc2b914ead9855d03e98c05b903bdd672abef6"
     bin: "ndc-http-schema"
     files:
       - from: "./ndc-http-schema-linux-amd64"
