@@ -1,0 +1,41 @@
+name: ndc-go
+version: "v1.6.3"
+shortDescription: "CLI plugin for Hasura ndc-go"
+homepage: https://github.com/hasura/ndc-sdk-go
+hidden: true
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v1.6.3/hasura-ndc-go-darwin-arm64"
+    sha256: "16ebb422dd00efd619e852f9ff53fb28ec5138de75ae4793b2c18daf145558f2"
+    bin: "hasura-ndc-go"
+    files:
+      - from: "./hasura-ndc-go-darwin-arm64"
+        to: "hasura-ndc-go"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v1.6.3/hasura-ndc-go-linux-arm64"
+    sha256: "121bdaf5e1426d4e9558b80df728f4821bc8d741478e44133c6dc3534cbfd88d"
+    bin: "hasura-ndc-go"
+    files:
+      - from: "./hasura-ndc-go-linux-arm64"
+        to: "hasura-ndc-go"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v1.6.3/hasura-ndc-go-darwin-amd64"
+    sha256: "e9b580083f957075cdd3531b2a8eecbb4ec5621b74e2210ffbbb80ac84edf754"
+    bin: "hasura-ndc-go"
+    files:
+      - from: "./hasura-ndc-go-darwin-amd64"
+        to: "hasura-ndc-go"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v1.6.3/hasura-ndc-go-windows-amd64.exe"
+    sha256: "8ffd8aa3bdd1d1cda2266e1440796e2fafc66bb79414a6f55b4198f546dd048d"
+    bin: "hasura-ndc-go.exe"
+    files:
+      - from: "./hasura-ndc-go-windows-amd64.exe"
+        to: "hasura-ndc-go.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v1.6.3/hasura-ndc-go-linux-amd64"
+    sha256: "8794452f1f5e20dc066b2124e6f4a18104ba5e254d182a61a952ad19fdfd687e"
+    bin: "hasura-ndc-go"
+    files:
+      - from: "./hasura-ndc-go-linux-amd64"
+        to: "hasura-ndc-go"
