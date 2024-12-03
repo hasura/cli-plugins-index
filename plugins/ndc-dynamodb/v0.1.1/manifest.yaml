@@ -1,0 +1,40 @@
+name: ndc-dynamodb
+version: "v0.1.1"
+shortDescription: "CLI plugin for Hasura ndc-dynamodb"
+homepage: https://hasura.io/connectors/dynamodb
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-dynamodb/releases/download/v0.1.1/ndc-dynamodb-cli-aarch64-apple-darwin"
+    sha256: "850249de89d1af437ef072f8a186521fe773867cafef457eb4a9d8a47b6a2a0c"
+    bin: "hasura-ndc-dynamodb"
+    files:
+      - from: "./ndc-dynamodb-cli-aarch64-apple-darwin"
+        to: "hasura-ndc-dynamodb"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-dynamodb/releases/download/v0.1.1/ndc-dynamodb-cli-aarch64-unknown-linux-gnu"
+    sha256: "09e80a399a2918e99e432416288f9aad1b954d8b19b580b216b30a765c9a476f"
+    bin: "hasura-ndc-dynamodb"
+    files:
+      - from: "./ndc-dynamodb-cli-aarch64-unknown-linux-gnu"
+        to: "hasura-ndc-dynamodb"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-dynamodb/releases/download/v0.1.1/ndc-dynamodb-cli-x86_64-apple-darwin"
+    sha256: "1c1a91c0b1c69bed4c426c7bcee212ae3067018b4326805b083c6e7c078ae4a4"
+    bin: "hasura-ndc-dynamodb"
+    files:
+      - from: "./ndc-dynamodb-cli-x86_64-apple-darwin"
+        to: "hasura-ndc-dynamodb"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-dynamodb/releases/download/v0.1.1/ndc-dynamodb-cli-x86_64-pc-windows-msvc.exe"
+    sha256: "46a6399323ea23feb3641e426ca9984a803c48ea55c8f94da9df90ef271fb7f1"
+    bin: "hasura-ndc-dynamodb.exe"
+    files:
+      - from: "./ndc-dynamodb-cli-x86_64-pc-windows-msvc.exe"
+        to: "hasura-ndc-dynamodb.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-dynamodb/releases/download/v0.1.1/ndc-dynamodb-cli-x86_64-unknown-linux-gnu"
+    sha256: "ead14ea57f4ad3afdde0b9b3321b4b0cd93c2679cfb6cc6397210e74943fe92e"
+    bin: "hasura-ndc-dynamodb"
+    files:
+      - from: "./ndc-dynamodb-cli-x86_64-unknown-linux-gnu"
+        to: "hasura-ndc-dynamodb"
