@@ -1,0 +1,41 @@
+name: ndc-http
+version: "v0.6.0"
+shortDescription: "CLI plugin for Hasura HTTP data connector"
+homepage: https://github.com/hasura/ndc-http
+hidden: true
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-http/releases/download/v0.6.0/ndc-http-schema-darwin-arm64"
+    sha256: "09e9c2bcde08e9e6ae4ae61924fead520744054252b4b2aeb658b47f46593a41"
+    bin: "ndc-http-schema"
+    files:
+      - from: "./ndc-http-schema-darwin-arm64"
+        to: "ndc-http-schema"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-http/releases/download/v0.6.0/ndc-http-schema-linux-arm64"
+    sha256: "163359d26b73f75bdd9c3e459a1fd0459076310116712a5b31782f0b21184912"
+    bin: "ndc-http-schema"
+    files:
+      - from: "./ndc-http-schema-linux-arm64"
+        to: "ndc-http-schema"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-http/releases/download/v0.6.0/ndc-http-schema-darwin-amd64"
+    sha256: "47da967de2fee5a40a55e9a14a1cc81b8b5ddd3ae02305293d35d56288dc352f"
+    bin: "ndc-http-schema"
+    files:
+      - from: "./ndc-http-schema-darwin-amd64"
+        to: "ndc-http-schema"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-http/releases/download/v0.6.0/ndc-http-schema-windows-amd64.exe"
+    sha256: "48cdac483e2f7ffd232b9414f41a3209d7fa9616a7241c064f2f8125b3dc59c9"
+    bin: "ndc-http-schema.exe"
+    files:
+      - from: "./ndc-http-schema-windows-amd64.exe"
+        to: "ndc-http-schema.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-http/releases/download/v0.6.0/ndc-http-schema-linux-amd64"
+    sha256: "a9d9f5178cfea7dd75845685d2f8ea6a21e9067690a79bbd002be84a53c35a60"
+    bin: "ndc-http-schema"
+    files:
+      - from: "./ndc-http-schema-linux-amd64"
+        to: "ndc-http-schema"
