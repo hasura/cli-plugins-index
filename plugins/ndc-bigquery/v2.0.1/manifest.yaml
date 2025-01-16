@@ -1,0 +1,40 @@
+name: ndc-bigquery
+version: "v2.0.1"
+shortDescription: "CLI plugin for Hasura ndc-bigquery"
+homepage: https://hasura.io/connectors/bigquery
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-bigquery/releases/download/v2.0.1/ndc-bigquery-cli-aarch64-apple-darwin"
+    sha256: "766ae3dfe4ad814e9118b6bd48443aaffea77fa988e9c7c1c18564d40d3a8e56"
+    bin: "hasura-ndc-bigquery"
+    files:
+      - from: "./ndc-bigquery-cli-aarch64-apple-darwin"
+        to: "hasura-ndc-bigquery"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-bigquery/releases/download/v2.0.1/ndc-bigquery-cli-aarch64-unknown-linux-gnu"
+    sha256: "e6367b71f24a793f0134b5462fea33861ddf32bf79297ba0e78c284299031500"
+    bin: "hasura-ndc-bigquery"
+    files:
+      - from: "./ndc-bigquery-cli-aarch64-unknown-linux-gnu"
+        to: "hasura-ndc-bigquery"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-bigquery/releases/download/v2.0.1/ndc-bigquery-cli-x86_64-apple-darwin"
+    sha256: "7785abf871d551dae1730801a7556211f6a60ca1b0c7fcdddb0a4ced5069483e"
+    bin: "hasura-ndc-bigquery"
+    files:
+      - from: "./ndc-bigquery-cli-x86_64-apple-darwin"
+        to: "hasura-ndc-bigquery"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-bigquery/releases/download/v2.0.1/ndc-bigquery-cli-x86_64-pc-windows-msvc.exe"
+    sha256: "d9c2266d7fd11202db4663dc27531756099efcb2b75f486209a2ef4eb99b94f0"
+    bin: "hasura-ndc-bigquery.exe"
+    files:
+      - from: "./ndc-bigquery-cli-x86_64-pc-windows-msvc.exe"
+        to: "hasura-ndc-bigquery.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-bigquery/releases/download/v2.0.1/ndc-bigquery-cli-x86_64-unknown-linux-gnu"
+    sha256: "566b6b7c52a22d5c2c5e38e9ec4767712751e95464ec97405b83ea4d1d2c2035"
+    bin: "hasura-ndc-bigquery"
+    files:
+      - from: "./ndc-bigquery-cli-x86_64-unknown-linux-gnu"
+        to: "hasura-ndc-bigquery"
