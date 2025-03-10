@@ -1,0 +1,41 @@
+name: ndc-storage
+version: "v0.0.6"
+shortDescription: "CLI plugin for Hasura Storage data connector"
+homepage: https://github.com/hasura/ndc-storage
+hidden: true
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-storage/releases/download/v0.0.6/hasura-ndc-storage-darwin-arm64"
+    sha256: "5a7b090607226097b4e8df24948630712e81836eb1d78bbc2612710b86e970a6"
+    bin: "hasura-ndc-storage"
+    files:
+      - from: "./hasura-ndc-storage-darwin-arm64"
+        to: "hasura-ndc-storage"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-storage/releases/download/v0.0.6/hasura-ndc-storage-linux-arm64"
+    sha256: "7c4de094a20fea8b187dd6f512314b8d23c66c319d874ac26a3e8f18ad796670"
+    bin: "hasura-ndc-storage"
+    files:
+      - from: "./hasura-ndc-storage-linux-arm64"
+        to: "hasura-ndc-storage"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-storage/releases/download/v0.0.6/hasura-ndc-storage-darwin-amd64"
+    sha256: "69649bc6bc7bc6bf7c9e6cb94e76fa6dc789063e278df84ad892ad5e199ca487"
+    bin: "hasura-ndc-storage"
+    files:
+      - from: "./hasura-ndc-storage-darwin-amd64"
+        to: "hasura-ndc-storage"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-storage/releases/download/v0.0.6/hasura-ndc-storage-windows-amd64.exe"
+    sha256: "c6ad9d5307246ba5b7211c31d38846044897d407df2ebc6e948684dac852c26d"
+    bin: "hasura-ndc-storage.exe"
+    files:
+      - from: "./hasura-ndc-storage-windows-amd64.exe"
+        to: "hasura-ndc-storage.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-storage/releases/download/v0.0.6/hasura-ndc-storage-linux-amd64"
+    sha256: "75a2762d17561d18d76ff8bd3931e799e98b32732cb4f555b9c4058e3fcf5c9c"
+    bin: "hasura-ndc-storage"
+    files:
+      - from: "./hasura-ndc-storage-linux-amd64"
+        to: "hasura-ndc-storage"
