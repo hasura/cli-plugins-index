@@ -1,0 +1,41 @@
+name: ndc-graphql
+version: "v0.2.3"
+shortDescription: "CLI plugin for Hasura ndc-graphql"
+homepage: https://hasura.io/connectors/graphql
+hidden: true
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-graphql/releases/download/v0.2.3/ndc-graphql-cli-aarch64-apple-darwin"
+    sha256: "2ef9d53d4c9bc50eff944c5c104c773d2e18d8cae8df7e98fc72de8f2d72e4fa"
+    bin: "hasura-ndc-graphql"
+    files:
+      - from: "./ndc-graphql-cli-aarch64-apple-darwin"
+        to: "hasura-ndc-graphql"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-graphql/releases/download/v0.2.3/ndc-graphql-cli-aarch64-unknown-linux-musl"
+    sha256: "52a846a1a71b11773833c04e86421095bb725eeb4ac08efc9140eb9bc14c5dc7"
+    bin: "hasura-ndc-graphql"
+    files:
+      - from: "./ndc-graphql-cli-aarch64-unknown-linux-musl"
+        to: "hasura-ndc-graphql"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-graphql/releases/download/v0.2.3/ndc-graphql-cli-x86_64-apple-darwin"
+    sha256: "b7112c2c594d8c47cf54e05e66f3eaa8339b7cd964d8007aee00aa422b006313"
+    bin: "hasura-ndc-graphql"
+    files:
+      - from: "./ndc-graphql-cli-x86_64-apple-darwin"
+        to: "hasura-ndc-graphql"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-graphql/releases/download/v0.2.3/ndc-graphql-cli-x86_64-pc-windows-msvc.exe"
+    sha256: "b98f35ef1701706b19ae0d2d3616483a1b220cc1549ca78efda44fad577353c4"
+    bin: "hasura-ndc-graphql.exe"
+    files:
+      - from: "./ndc-graphql-cli-x86_64-pc-windows-msvc.exe"
+        to: "hasura-ndc-graphql.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-graphql/releases/download/v0.2.3/ndc-graphql-cli-x86_64-unknown-linux-musl"
+    sha256: "b9db47c02056d9fcb7374e609d72dc8a593518bdf086bc9543efd53a0acc3930"
+    bin: "hasura-ndc-graphql"
+    files:
+      - from: "./ndc-graphql-cli-x86_64-unknown-linux-musl"
+        to: "hasura-ndc-graphql"
