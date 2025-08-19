@@ -6,35 +6,35 @@ hidden: true
 platforms:
   - selector: darwin-arm64
     uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v2.0.0/hasura-ndc-go-darwin-arm64"
-    sha256: "1393554f12462851912ad36741f30287fd453902e690731b90193f9c641613df"
+    sha256: "cbec03156bea4df123535e8c1724d22835cabef959ba4d1e185caeb837dc8ca5"
     bin: "hasura-ndc-go"
     files:
       - from: "./hasura-ndc-go-darwin-arm64"
         to: "hasura-ndc-go"
   - selector: linux-arm64
     uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v2.0.0/hasura-ndc-go-linux-arm64"
-    sha256: "4f76d19455fc67535bcb565eec1d09503c47b88a91a6254e288e78e91b2e374f"
+    sha256: "a9d20b2ee907c15df02c4a3e0d775115989279a25deb0f30d86ec2c3390cc139"
     bin: "hasura-ndc-go"
     files:
       - from: "./hasura-ndc-go-linux-arm64"
         to: "hasura-ndc-go"
   - selector: darwin-amd64
     uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v2.0.0/hasura-ndc-go-darwin-amd64"
-    sha256: "e41ebd31eedba016af4b10a1efc1f3445d02ae5557b2742d5b7dc9123e2c2431"
+    sha256: "6b980694bbf20154b32cdaab183f023f4b6e8805196ce5481a423b56963a6416"
     bin: "hasura-ndc-go"
     files:
       - from: "./hasura-ndc-go-darwin-amd64"
         to: "hasura-ndc-go"
   - selector: windows-amd64
     uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v2.0.0/hasura-ndc-go-windows-amd64.exe"
-    sha256: "95f11a1e622a2e78bede319316cd883fd73a7d4b73179523773d109a37429db0"
+    sha256: "9cd10d7557e9c15ea0b79f6774dd2e15f1ea68d5e8015bd7e6f6c1f494cee254"
     bin: "hasura-ndc-go.exe"
     files:
       - from: "./hasura-ndc-go-windows-amd64.exe"
         to: "hasura-ndc-go.exe"
   - selector: linux-amd64
     uri: "https://github.com/hasura/ndc-sdk-go/releases/download/v2.0.0/hasura-ndc-go-linux-amd64"
-    sha256: "f7d047ca38bc400a1bb9e452a78f5b345fe1ee327b4cf458be7e25ae2689d662"
+    sha256: "90ef73c1c38a0b34d1d9a68658389508e9ffd1481de63facee636c16e6860e65"
     bin: "hasura-ndc-go"
     files:
       - from: "./hasura-ndc-go-linux-amd64"
