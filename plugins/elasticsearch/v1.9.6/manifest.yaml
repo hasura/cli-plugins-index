@@ -13,7 +13,7 @@ platforms:
         to: "hasura-elasticsearch"
   - selector: linux-arm64
     uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.9.6/ndc-elasticsearch-cli-aarch64-unknown-linux-musl"
-    sha256: sha256:377efb61cc26a1acb51d7c744aa4976e7fe9673ebd1347ef2302fe5a78e4fcc3""
+    sha256: "377efb61cc26a1acb51d7c744aa4976e7fe9673ebd1347ef2302fe5a78e4fcc3"
     bin: "hasura-elasticsearch"
     files:
       - from: "./ndc-elasticsearch-cli-aarch64-unknown-linux-musl"
