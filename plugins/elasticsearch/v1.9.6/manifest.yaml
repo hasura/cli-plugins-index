@@ -1,0 +1,41 @@
+name: elasticsearch
+version: "v1.9.6"
+shortDescription: "CLI plugin for Hasura ndc-elasticsearch"
+homepage: https://hasura.io/connectors/elasticsearch
+hidden: true
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.9.6/ndc-elasticsearch-cli-aarch64-apple-darwin"
+    sha256: "d77449db07118ff4c17ca52bc3f562d81380b988b7e8d8401387e5b2201038e2"
+    bin: "hasura-elasticsearch"
+    files:
+      - from: "./ndc-elasticsearch-cli-aarch64-apple-darwin"
+        to: "hasura-elasticsearch"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.9.6/ndc-elasticsearch-cli-aarch64-unknown-linux-musl"
+    sha256: sha256:377efb61cc26a1acb51d7c744aa4976e7fe9673ebd1347ef2302fe5a78e4fcc3""
+    bin: "hasura-elasticsearch"
+    files:
+      - from: "./ndc-elasticsearch-cli-aarch64-unknown-linux-musl"
+        to: "hasura-elasticsearch"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.9.6/ndc-elasticsearch-cli-x86_64-apple-darwin"
+    sha256: "449900372558ce7e4eea42a7f22420b752dfeeadbf56ce0e9b28439a8ab38fe8"
+    bin: "hasura-elasticsearch"
+    files:
+      - from: "./ndc-elasticsearch-cli-x86_64-apple-darwin"
+        to: "hasura-elasticsearch"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.9.6/ndc-elasticsearch-cli-x86_64-pc-windows-msvc.exe"
+    sha256: "f685ab12cda95a00e7aecb4b246c3eb03b9627bd1a57225e0accef997b312a3a"
+    bin: "hasura-elasticsearch.exe"
+    files:
+      - from: "./ndc-elasticsearch-cli-x86_64-pc-windows-msvc.exe"
+        to: "hasura-elasticsearch.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.9.6/ndc-elasticsearch-cli-x86_64-unknown-linux-musl"
+    sha256: "6feb8e3feeffabf9df146203153e7bec964c4b8ac4124613296c879d74db1359"
+    bin: "hasura-elasticsearch"
+    files:
+      - from: "./ndc-elasticsearch-cli-x86_64-unknown-linux-musl"
+        to: "hasura-elasticsearch"
