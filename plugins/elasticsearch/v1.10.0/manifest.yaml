@@ -6,35 +6,35 @@ hidden: true
 platforms:
   - selector: darwin-arm64
     uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.10.0/ndc-elasticsearch-cli-aarch64-apple-darwin"
-    sha256: "8e8bdd55a978410b60d69a3b827a09b12b42e4cb945d8c0dad27ab0e357cb2e2"
+    sha256: "2e50e892fb983b2400c1e94c3584743420b2171e09ce66c62075706c3b333f0f"
     bin: "hasura-elasticsearch"
     files:
       - from: "./ndc-elasticsearch-cli-aarch64-apple-darwin"
         to: "hasura-elasticsearch"
   - selector: linux-arm64
     uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.10.0/ndc-elasticsearch-cli-aarch64-unknown-linux-musl"
-    sha256: "63e363bbac09ecbf735368864998f6538c77d388f57b2173236e0ecc65d34ba4"
+    sha256: "9920ee36142e1c5084d06bb266e99496a3a5497086493ed50df07789591b81b1"
     bin: "hasura-elasticsearch"
     files:
       - from: "./ndc-elasticsearch-cli-aarch64-unknown-linux-musl"
         to: "hasura-elasticsearch"
   - selector: darwin-amd64
     uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.10.0/ndc-elasticsearch-cli-x86_64-apple-darwin"
-    sha256: "2c430988c10262b0805e3700ae3acc63095a233cdb80ea1b7a4d74d4a1a96c9c"
+    sha256: "456256c14c261316b88cff31bc01b00d0845d5ba52742f6aa73a643ca67aa2ee"
     bin: "hasura-elasticsearch"
     files:
       - from: "./ndc-elasticsearch-cli-x86_64-apple-darwin"
         to: "hasura-elasticsearch"
   - selector: windows-amd64
     uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.10.0/ndc-elasticsearch-cli-x86_64-pc-windows-msvc.exe"
-    sha256: "cea742cfd568eea226eb58c77b8728f1fcde2bf0ecbf15820409b37d437911eb"
+    sha256: "185bac8d8ff8e5c35bbad62b4d8669b8541259f6276d11f206f972fad5089cfd"
     bin: "hasura-elasticsearch.exe"
     files:
       - from: "./ndc-elasticsearch-cli-x86_64-pc-windows-msvc.exe"
         to: "hasura-elasticsearch.exe"
   - selector: linux-amd64
     uri: "https://github.com/hasura/ndc-elasticsearch/releases/download/v1.10.0/ndc-elasticsearch-cli-x86_64-unknown-linux-musl"
-    sha256: "59550ac8c23f1bc2d028b8c4ae94f0f38a62596b51fb53ef647aba6ea15e5f6c"
+    sha256: "d2c385b2c6d44daec5cbf0c1365bcb0b4b5d0b75752241f12857ee311021e49d"
     bin: "hasura-elasticsearch"
     files:
       - from: "./ndc-elasticsearch-cli-x86_64-unknown-linux-musl"
