@@ -1,0 +1,41 @@
+name: ndc-prometheus
+version: "v0.5.0"
+shortDescription: "CLI plugin for Hasura Prometheus data connector"
+homepage: https://github.com/hasura/ndc-prometheus
+hidden: true
+platforms:
+  - selector: darwin-arm64
+    uri: "https://github.com/hasura/ndc-prometheus/releases/download/v0.5.0/ndc-prometheus-darwin-arm64"
+    sha256: "af1da043217f1c751633a56c8607a70638fe2629644f1f74c8d84da3152edc05"
+    bin: "ndc-prometheus"
+    files:
+      - from: "./ndc-prometheus-darwin-arm64"
+        to: "ndc-prometheus"
+  - selector: linux-arm64
+    uri: "https://github.com/hasura/ndc-prometheus/releases/download/v0.5.0/ndc-prometheus-linux-arm64"
+    sha256: "1ce436b204aeb22fa29a158455bbc632cfeeb3060b939730faca2625d967b43e"
+    bin: "ndc-prometheus"
+    files:
+      - from: "./ndc-prometheus-linux-arm64"
+        to: "ndc-prometheus"
+  - selector: darwin-amd64
+    uri: "https://github.com/hasura/ndc-prometheus/releases/download/v0.5.0/ndc-prometheus-darwin-amd64"
+    sha256: "5b1db8cae5ca055026aebd9294e8a5e1aa14a494bc08ce10b4d730cae63b8712"
+    bin: "ndc-prometheus"
+    files:
+      - from: "./ndc-prometheus-darwin-amd64"
+        to: "ndc-prometheus"
+  - selector: windows-amd64
+    uri: "https://github.com/hasura/ndc-prometheus/releases/download/v0.5.0/ndc-prometheus-windows-amd64.exe"
+    sha256: "0522cf939a27efd351edebaceb0d2c3e3cdeb1e4ae08555b53b5322b24fcd427"
+    bin: "ndc-prometheus.exe"
+    files:
+      - from: "./ndc-prometheus-windows-amd64.exe"
+        to: "ndc-prometheus.exe"
+  - selector: linux-amd64
+    uri: "https://github.com/hasura/ndc-prometheus/releases/download/v0.5.0/ndc-prometheus-linux-amd64"
+    sha256: "a4fc42fa607835dcf48549060449adb3094ab5be18d7c9706169f7439a590d13"
+    bin: "ndc-prometheus"
+    files:
+      - from: "./ndc-prometheus-linux-amd64"
+        to: "ndc-prometheus"
