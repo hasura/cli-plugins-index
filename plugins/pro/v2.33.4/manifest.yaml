@@ -1,0 +1,27 @@
+name: pro
+version: "v2.33.4"
+shortDescription: "CLI plugin for Hasura Pro"
+homepage: https://docs.pro.hasura.io/cli
+hidden: true
+platforms:
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/v2.33.4/hasura-pro-linux-amd64.tar.gz"
+    sha256: "5fc49ed47720b0b31fd0ffe66d2824ef25b03f4f341d4f0da9f014a51b9b91c6"
+    bin: hasura-pro
+    files:
+      - from: ./hasura-pro-linux-amd64
+        to: hasura-pro
+    selector: linux-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/v2.33.4/hasura-pro-darwin-amd64.tar.gz"
+    sha256: "01b5a2e7b18b39910197a243807bcdaf72333165e9ce1942ff4ef3ede2e5ab54"
+    bin: hasura-pro
+    files:
+      - from: ./hasura-pro-darwin-amd64
+        to: hasura-pro
+    selector: darwin-amd64
+  - uri: "https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases-dev/v2.33.4/hasura-pro-windows-amd64.zip"
+    sha256: "7a5c280e95e6501be3076d3dd81ca5d859dc1744b2ca84e9e3fa3f98680774f5"
+    bin: hasura-pro.exe
+    files:
+      - from: ./hasura-pro-windows-amd64.exe
+        to: hasura-pro.exe
+    selector: windows-amd64
